@@ -1,0 +1,24 @@
+<h1>Master Food List!</h1>
+<button class="btn btn-primary" routerLink="/foodadd/0">Add Food Item</button> <br>
+<br>
+<table class="table table-bordered table-responsive">
+    <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>URL</th>
+        <th></th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let list of foodList">
+        <td>{{ list.Id }}</td>
+        <td>{{ list.Name }}</td>
+        <td class="ellipsis">{{ list.Description }}</td>
+        <td>{{ list.Price }}</td>
+        <td>{{ list.ImageUrl }}</td>
+        <td><button class="btn btn-primary btn-sm btn-block" [routerLink] = "['/foodedit',list.Id]">Edit</button> |
+        <button class="btn btn-danger btn-sm" (click)="onDelete(list.Id)">Delete</button></td>
+        </tr>
+    </tbody>
+</table>

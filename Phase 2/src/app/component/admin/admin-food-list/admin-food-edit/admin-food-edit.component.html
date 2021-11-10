@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <h1>{{ header }}</h1>
+
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+        <div class="form-group">
+            <label for="">ID:</label>
+            <input type="text" class="form-control" [ngModel]="food?.Id" name="id">
+        </div>
+        <div class="form-group">
+            <label for="">Name:</label>
+            <input type="text" class="form-control" [ngModel]="food?.Name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="">Description:</label>
+            <input type="text" class="form-control" [ngModel]="food?.Description" name="description">
+        </div>
+        <div class="form-group">
+            <label for="">Price:</label>
+            <input type="text" class="form-control" [ngModel]="food?.Price" name="price">
+        </div>
+        <div class="form-group">
+            <label for="">ImageUrl:</label>
+            <input type="text" class="form-control" [ngModel]="food?.ImageUrl" name="imageurl"><br>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-sm btn-block">Save</button>
+        </div>
+    </form>
+</div>

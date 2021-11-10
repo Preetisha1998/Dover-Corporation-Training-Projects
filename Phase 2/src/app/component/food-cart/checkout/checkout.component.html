@@ -1,0 +1,68 @@
+<div class="card">
+    <div class="card-header">
+        <strong>Checkout</strong>
+    </div>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let item of CartcheckoutItems">
+                <div class="cart-item">
+                    <span>{{ item.Name }}</span> Price: 
+                    <span>{{ item.price }}</span> x
+                    <span>{{ item.qty }}</span>:
+                    <strong>{{ (item.qty * item.price) | currency: 'INR' }}</strong>
+                </div>
+            </li>
+            <li class="list-group-item active">
+                <strong>Total</strong> {{ cartTotal  | currency:'INR'}}
+            </li>
+        </ul>
+        </div>
+        <button type="button" class="btn btn-success btn-block btn-md" 
+        data-bs-toggle="modal" 
+        data-bs-target="#food_bill_modal">Generate Bill</button> 
+        <!--Bill Modal-->
+        <div class="modal fade" id="food_bill_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bill</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of CartcheckoutItems">
+                                <div class="cart-item">
+                                    <span>{{ item.Name }}</span> Price: 
+                                    <span>{{ item.price }}</span> x
+                                    <span>{{ item.qty }}</span>:
+                                    <strong>{{ (item.qty * item.price) | currency: 'INR' }}</strong>
+                                </div>
+                            </li>
+                            <li class="list-group-item active">
+                                <strong>Total</strong> {{ cartTotal  | currency:'INR'}}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#order_confirmaton">Place Order</button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <!--Order Confirmation Modal-->
+        <div class="modal fade" id="order_confirmaton" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Order Status</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                 <h4 style="color: rgb(24, 204, 93);"> Order Placed SuccessFully !!</h4>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary"><a href="/foodcart" style="color: ghostwhite; text-decoration: none;">Home</a></button>
+                </div>
+              </div>
+            </div>
+          </div>

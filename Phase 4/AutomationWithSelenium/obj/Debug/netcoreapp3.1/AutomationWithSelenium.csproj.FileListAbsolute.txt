@@ -1,0 +1,17 @@
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\bin\Debug\netcoreapp3.1\AutomationWithSelenium.exe
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\bin\Debug\netcoreapp3.1\AutomationWithSelenium.deps.json
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\bin\Debug\netcoreapp3.1\AutomationWithSelenium.runtimeconfig.json
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\bin\Debug\netcoreapp3.1\AutomationWithSelenium.runtimeconfig.dev.json
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\bin\Debug\netcoreapp3.1\AutomationWithSelenium.dll
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\bin\Debug\netcoreapp3.1\AutomationWithSelenium.pdb
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\bin\Debug\netcoreapp3.1\WebDriver.dll
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.csproj.AssemblyReference.cache
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.AssemblyInfoInputs.cache
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.AssemblyInfo.cs
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.csproj.CoreCompileInputs.cache
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.csproj.CopyComplete
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.dll
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.pdb
+C:\Users\11035915\source\Phase4Assesment-master\AutomationWithSelenium\obj\Debug\netcoreapp3.1\AutomationWithSelenium.genruntimeconfig.cache

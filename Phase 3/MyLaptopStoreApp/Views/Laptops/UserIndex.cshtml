@@ -1,0 +1,18 @@
+﻿@model IEnumerable<IdentitySecuredApp.Models.Laptop>
+    <h1>Hey User!</h1>
+
+    <h4>Happy Shopping</h4>
+    <div class="card-deck">
+        @foreach (var item in Model)
+        {
+            <div class="card m-3" style="min-width: 18rem; max-width:30.5%;">
+                <div class="card-header">
+                    <h3>@item.Title</h3>
+                </div>
+                <img class="card-img-top" src="@item.ImageUrl" alt="Laptop Image" height="200px" />
+                <div class="card-footer text-center">
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        }
+    </div>

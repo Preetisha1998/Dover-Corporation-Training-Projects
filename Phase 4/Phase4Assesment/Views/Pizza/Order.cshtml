@@ -1,0 +1,43 @@
+﻿@model Phase4Assesment.Models.PizzaModel
+
+@{
+    ViewData["Title"] = "Order";
+}
+
+<h1>Order Details</h1>
+<div class="bg-light p-5 rounded-lg m-3">
+    <h1 class="display-4">Success👍</h1>
+    <p class="lead">We will reach out to you soon✔</p>
+    <hr class="my-4">
+    <pre>These are what you ordered. CheckOut!</pre>
+    <dl class="row">
+        <dt class="col-sm-2">
+        
+        </dt>
+        <dd class="col-sm-10">
+            <b>@Html.DisplayFor(model => model.PName)</b> 
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Crust)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Crust)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+    </dl>
+    <div>
+        <a asp-action="Index">Missed To Order Something</a>
+    </div>
+</div>
+   
